@@ -1,0 +1,59 @@
+# My Slate config
+
+# Global configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config orderScreensLeftToRight false
+
+# Resize Bindings
+bind ]:cmd;shift resize +10% +0
+bind [:cmd;shift resize -10% +0
+
+# Throw Bindings
+bind 1:cmd;shift         throw 1 resize
+bind 2:cmd;shift         throw 0 resize
+bind 3:cmd;shift         throw 2 resize
+
+##### Desktop layout #####
+
+# Left screen
+layout desktop 'Spotify' throw 1 resize
+layout desktop 'Slack' throw 1 resize
+
+# Middle screen
+layout desktop 'iTerm2' push right bar-resize:screenSizeX/2
+layout desktop 'Postman' push left bar-resize:screenSizeX/2
+layout desktop 'Sublime Text' throw 3 resize
+layout desktop 'Google Chrome' throw 3 resize
+
+# Right screen
+layout desktop 'Sketch' throw 2 resize
+
+##### Laptop layout #####
+
+# Fullscreen
+layout laptop 'Spotify' move 0;0 screenSizeX;screenSizeY
+layout laptop 'Slack' move 0;0 screenSizeX;screenSizeY
+layout laptop 'Sublime Text' move 0;0 screenSizeX;screenSizeY
+layout laptop 'Google Chrome' move 0;0 screenSizeX;screenSizeY
+layout laptop 'Sketch' move 0;0 screenSizeX;screenSizeY
+layout laptop 'Postman' move 0;0 screenSizeX;screenSizeY
+
+# Half screen
+layout laptop 'iTerm' push right bar-resize:screenSizeX/2
+# layout laptop 'Finder' push left bar-resize:screenSizeX/2
+
+##### Defaults #####
+
+default laptop count:1
+default desktop count:3
+
+##### Bindings #####
+
+# Reload Slate
+bind a:shift;cmd relaunch
+# Setup desktop layout
+bind s:shift;cmd layout desktop
+# Setup laptop layout
+bind d:shift;cmd layout laptop
