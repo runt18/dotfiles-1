@@ -183,7 +183,8 @@ eval "$(hub alias -s)"
 
 . $DIR'/z.sh'
 
-source $DIR"/thumbtack.sh"
+THUMBTACK=$DIR"/thumbtack.sh"
+test -f $THUMBTACK && source $THUMBTACK
 
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
 
