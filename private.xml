@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>Metadot</vendorname>
+    <vendorid>0x24f0</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>DasKeyboard</productname>
+    <productid>0x0140</productid>
+  </deviceproductdef>
+
+  <item>
+    <name>Control_L to Option_L for External Keyboard</name>
+    <identifier>private.controlL2optionL</identifier>
+    <device_only>DeviceVendor::Metadot, DeviceProduct::DasKeyboard</device_only>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::OPTION_L</autogen>
+  </item>
+
+  <item>
+    <name>Option_L to Control_L for External Keyboard</name>
+    <identifier>private.optionL2controlL</identifier>
+    <device_only>DeviceVendor::Metadot, DeviceProduct::DasKeyboard</device_only>
+    <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::CONTROL_L</autogen>
+  </item>
+</root>
