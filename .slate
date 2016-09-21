@@ -26,6 +26,8 @@ layout desktop 'iTerm2' push right bar-resize:screenSizeX/2
 layout desktop 'Postman' push left bar-resize:screenSizeX/2
 layout desktop 'Sublime Text' throw 3 resize
 layout desktop 'Google Chrome' throw 3 resize
+layout desktop 'Photoshop' throw 3 resize
+layout desktop 'Photos' throw 3 resize
 
 # Right screen
 layout desktop 'Sketch' throw 2 resize
