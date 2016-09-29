@@ -136,6 +136,8 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # More memorable name for displaying file and folder sizes
 alias disk='du -sh'
 
+alias wipecard='rm -rf /Volumes/PHOTON/DCIM/100MSDCF/*'
+
 # source $DIR"git-complete.sh"
 
 # Alias git to hub to get all of the extra features
